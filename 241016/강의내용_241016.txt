@@ -1,0 +1,108 @@
+CLI : Command Line Interface
+하단 찾기 클릭 > cmd
+
+cd desktop
+cd web01
+mkdir 241016
+cd 241016
+code .
+
+html : Structure(구조)
+index.html
+
+css : Style(메이크업)
+> 내부스타일시트
+> 외부스타일시트 (거의 대부분)
+> 인라인스타일
+
+alt + L + O : Live Server 확장프로그램 실행
+
+dummy 문구!!!
+> 아무런 의미가 없는 문장 덩어리
+
+vs code : MS > 개발 진심회사
+1) 자동완성기능 : emmet
+2) 외부확장프로그램
+
+git : IT 업계 종사
+- 형상기억관리 툴
+- 버전관리 툴
+
+> 개발업무 : 절대 혼자서 x
+> 다수 개발협업 && UI/UX => WB // PB
+> 업로드 // 오늘 작업 || 어제 작업
+
+로컬컴퓨터에서의 작업물
+
+원격저장소 : git-hub
+
+Repository : 레파지토리 (*저장공간)
+데이터 업로드 용량 제한 : 
+1) 터미널 활용 : 100MB
+2) 수동 : 25MB
+
+git-hub 생성된 원격저장소 레포지토리 주소!!!
+https://github.com/Divjason/sbswebclass-241015
+
+로컬컴퓨터 git 설치
+
+git -v
+
+git config --list
+
+git config --global --unset user.name
+git config --global --unset user.email
+
+git config --global user.name "Divjason"
+git config --global user.email "sejinpark@tcocs.com"
+
+swiper // slick // featherlight // gsap // anime // pageEffectScroll // three // chart
+
+로컬컴퓨터 > 다수의 프로젝트 
+staging area : git-hub data를 옮기기전에 로컬컴퓨터안에 별도의 공간을 만들어서 버전관리
+> 가장 최상위 루트폴더 1개만 있어야!!!
+
+web01 > 241015 / 241016 / 241017.....
+
+cd .. : 현재 위치한 디렉토리 바로 위 상위 디렉토리 이동!!!
+
+git init
+git add .
+git status
+git remote add origin https://github.com/Divjason/sbswebclass-241015.git
+git remote -v
+(fetch)
+(push)
+
+git commit -m "241016"
+
+git push origin master
+
+git clone https://github.com/Divjason/sbswebclass-241015.git
+
+git 책 > 부제 : 지옥에서 온 깃
+
+https://github.com/Divjason/sbswebclass-241015
+
+웹 영역 // 개발자 주 html 태그 20~23
+
+텍스트 관련 태그!!!
+
+h(n)
+
+h1 ~ h6 : h1 태그 가장 폰트 서체가 큼
+h6 태그 가장 폰트 서체가 작음
+
+heading : 문서 대표 타이틀 의미를 부여하고자 할 때!!!
+
+멀티태그 // 쌍태그
+싱글태그 // 홑태그
+
+html 태그
+> 태그 자체만으로도 기능 구현
+> 반드시 속성 & 속성값이 있어야지만 기능 구현
+
+
+
+
+
