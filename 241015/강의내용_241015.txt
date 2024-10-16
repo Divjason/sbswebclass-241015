@@ -1,0 +1,40 @@
+수업자료
+1.수업내용 : git-hub // commit // download
+2.slack : Q&A // Soruce 자료
+
+웹1 : html5 // css3
+
+Hyper Text Markup language
+
+Cascading Style Sheet
+
+웹에디터 : 웹 브라우저에 간단한 UI를 구현해줄 수 있도록 도와주는 도구 // 자동완성 // 단축키 설정
+- Atom // Brackets
+- MS VS CODE
+- 로컬컴퓨터
+visual studio code
+Root Folder : 이미지 경로 // 외부데이터
+GUI VS CLI
+
+보일러 플레이트
+
+emmet
+
+IDE : 프론트엔드 
+
+Live Server
+Korean Language Pack
+One Dark Pro
+material icon theme
+indent rainbow
+Prettier
+
+Tab Size
+Word Wrap
+Mouse Wheel Zoom
+Emmet: Variables
+
+https://github.com/
+> 회원가입!!!
+
+
