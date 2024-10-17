@@ -1,0 +1,52 @@
+실무에 입각한 내용을 기반 수업
+> git-hub
+> 쉽게 이론 // 예제
+
+-----------------------------------
+
+html, css
+- 내부스타일시트
+- 외부스타일시트 (*대중적인)
+- 인라인스타일
+
+html"5"
+- semantic : 의미론적인
+
+웹(html, css) 공부
+- 구글, 네이버 블로그 x
+- w3c school : 삼성, 네이버, 카카오 등
+> www
+- MDN : Mozilla 기업이 만든 웹 표준 문서 사이트
+> 애플, 구글 등의 IT
+> 변화 혹은 이슈
+
+1.h(n) : 1~6 : heading
+- 문서 타이틀
+
+2.p : paragraph
+- 문서 내용
+
+3.br : break
+- 문서 행을 인위적으로 나누고자 할 때
+
+4.hr : horizontal Ruler
+- 문서 상에 가로 선을 그릴 수 있음
+
+5.a : anchor
+- 특정 텍스트 혹은 도형을 감싸안고 있는 태그 => 원하는 경로로 사용자를 이동시킬 수 있음
+- 반드시 사용자를 이동시키고자 하는 경로 속성값을 가지고 있어야함!!!
+- href(hyper reference) 속성값 (*필수)
+
+6.ul, ol, li
+- 어떤 목록 리스트를 만들고자 할 때 사용하는 태그
+- ul = Unorder List (*항상 부모)
+- ol = Order List (*항상 부모)
+- li = List Item (*항상 자식)
+
+7.table, tr, th, td
+- 어떤 표를 만들고자 할 때 사용하는 태그
+- table (*항상 최상위 부모)
+- tr = table row (*테이블의 행)
+- td = table data (*테이블의 열)
+- th = table header (*테이블의 열 중에서도 타이틀의 역할을 할 열을 의미)
+- thead / tbody / tfoot

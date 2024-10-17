@@ -1,0 +1,21 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
