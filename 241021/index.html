@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      textarea {
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="http://127.0.0.1:5500/" method="get">
+      <input placeholder="아이디 입력" type="text" name="query" /><br />
+      <input placeholder="패스워드 입력" type="password" name="query" /><br />
+      <label>남성<input type="radio" name="gender" value="male" /></label>
+      <label>여성<input type="radio" name="gender" value="female" /></label
+      ><br />
+      <label>10대<input type="radio" name="age" value="10" /></label>
+      <label>20대<input type="radio" name="age" value="20" /></label>
+      <label>30대<input type="radio" name="age" value="30" /></label>
+      <label>40대<input type="radio" name="age" value="40" /></label><br />
+      <h2>당신이 영어공부를 하는 이유는?</h2>
+      <label>영어회화<input type="checkbox" value="english1" /></label>
+      <label>문법<input type="checkbox" value="english2" /></label>
+      <label>해외유학<input type="checkbox" value="english3" /></label>
+      <label>직장인 영어<input type="checkbox" value="english4" /></label><br />
+      <input type="file" /><br />
+      <input type="range" /><br />
+      <label>출발날짜<input type="date" name="" id="" /></label><br />
+      <label>도착날짜<input type="date" name="" id="" /></label><br />
+      <select name="" id="">
+        <option selected disabled>메뉴선택</option>
+        <option value="food1">떡볶이</option>
+        <option value="food1">순대</option>
+        <option value="food1">튀김</option>
+        <option value="food1">어묵</option></select
+      ><br />
+      <textarea
+        rows="10"
+        cols="50"
+        placeholder="당신의 의견을 남겨주세요"
+      ></textarea
+      ><br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
