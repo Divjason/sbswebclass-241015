@@ -1,0 +1,69 @@
+h1 {
+  background: crimson;
+  &:hover {
+    color: #fff;
+  }
+  &:active {
+    color: dodgerblue;
+  }
+}
+
+/* input:enabled {
+  background: yellowgreen;
+}
+
+input:disabled {
+  background: brown;
+}
+
+input:focus {
+  background: dodgerblue;
+} */
+
+form > input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  &:focus {
+    outline: none;
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  &:visited {
+    color: yellowgreen;
+  }
+  &:link::after {
+    content: " - " attr(href);
+  }
+}
+
+input:not([type="password"]) {
+  background: crimson;
+}
+
+.content {
+  & > p {
+    counter-increment: rint;
+  }
+  & > p::before {
+    content: counter(rint) ".";
+  }
+  & > p::after {
+    content: " - " attr(data-page) " page";
+  }
+  & > p::first-letter {
+    font-size: 30px;
+  }
+  & > p::first-line {
+    color: crimson;
+  }
+  & > p::selection {
+    background: #000;
+    color: crimson;
+  }
+}
