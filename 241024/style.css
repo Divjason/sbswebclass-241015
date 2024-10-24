@@ -1,0 +1,25 @@
+.title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.test {
+  font-size: 2em;
+}
+
+h1 {
+  color: crimson;
+}
+
+/* Hex Code */
+h2 {
+  color: #ff0;
+}
+
+h3 {
+  color: rgb(255, 0, 0);
+}
+
+h4 {
+  color: rgba(0, 0, 0, 0.5);
+}

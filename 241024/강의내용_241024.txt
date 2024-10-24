@@ -1,0 +1,44 @@
+1.html 태그
+- h // p / a / ol, ul, li / table, tr, td, th / form / img / video / audio / br / hr / main / section ...
+
+2.css 선택자
+- 전체 / 태그 / 아이디 / 클래스 / 속성 / 동위 / 문자 / 반응 / 상태 / 부정 / 구조 ...
+
+3.css 속성
+- 단위 : px, %, em, rem, vw, vh
+- px : 고정단위
+- em : element(*요소) // 몇 배수 (*부모요소 기준)
+- rem : root element(*최상위 태그 요소를 기준)
+- % : 비율
+- 가변그리드 : 마진, 패딩
+- vw / vh
+
+- 문서를 작성하면 기본 폰트사이즈 16px
+
+h1: 32px
+h2: 24px
+h3: 18px
+h4: 16px
+h5: 13px
+h6: 10px
+
+- 색상
+- 6각형 hexagon
+- #ffff00
+- 컴퓨터 공학 지식 = CS
+- 태초에 컴퓨터가 명령어를 처리하기 위해서 탄생된 시스템
+- 2개의 숫자
+- 0, 1 => 비트 (*컴퓨터의 메모리 단위, 가장 작은 단위)
+- 8개의 비트 = 1바이트 (*진정한 메모리 처리를 위한 최소한의 단위)
+- 2의 8제곱 = 256 : 0
+- 최소한의 메모리 처리를 하기위한 단위 1바이트 세팅 => 웹에서 색상을 처리하기위한 255, 255, 255 =>
+- 10진수
+- 16진수
+- 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+
+가시적 속성
+display: none
+visibility : hidden
+
+git clone https://github.com/Divjason/sbswebclass-241015.git
+

@@ -1,0 +1,11 @@
+#box {
+  /* 기존에 있었던 요소를 흔적도 없이 사라지게 */
+  /* display: none; */
+  /* display: block; */
+  display: inline;
+  width: 1000px;
+  height: 500px;
+  background: #ccc;
+  margin: 20px;
+  /* visibility: hidden; */
+}
