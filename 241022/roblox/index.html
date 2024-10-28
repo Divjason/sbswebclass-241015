@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/3f2ea24883.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css & js -->
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
     <title>Document</title>
@@ -55,6 +61,25 @@
                   <option value="9일">9일</option>
                   <option value="10일">10일</option>
                 </select>
+              </div>
+            </article>
+            <article class="username">
+              <span>사용자이름</span>
+              <input type="text" placeholder="반드시 실명을 입력하세요" />
+            </article>
+            <article class="userpassword">
+              <span>비밀번호</span>
+              <input type="password" placeholder="영문 알파벳 최소 8자 이상" />
+            </article>
+            <article class="gender">
+              <span>성별(선택사항)</span>
+              <div id="gender_btn">
+                <button id="femalebtn">
+                  <i class="fa-solid fa-person-dress"></i>
+                </button>
+                <button id="malebtn">
+                  <i class="fa-solid fa-person"></i>
+                </button>
               </div>
             </article>
           </div>

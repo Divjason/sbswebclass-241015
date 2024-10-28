@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* h1 {
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  margin: 50px;
+  display: none;
+  visibility: visible;
+}
+
+span {
+  display: inline-block;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  margin: 50px;
+  padding: 50px;
+}
+
+div {
+  width: 500px;
+  height: 500px;
+  background: crimson;
+  opacity: 0.9;
+} */
+
+div {
+  width: 200px;
+  height: 200px;
+  &:nth-child(1) {
+    background: dodgerblue;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: content-box;
+    /* 상하좌우 모든 값을 30px */
+    /* margin: 30px;  */
+    /* 상하 마진 30px && 좌우 마진 10px */
+    /* margin: 30px 10px; */
+    /* 상 마진 30px & 좌우 마진 10px & 하 마진 20px */
+    /* margin: 30px 10px 20px; */
+    /* 상부터 시계방향으로 마진 */
+    /* margin: 40px 30px 20px 10px; */
+    /* padding: 30px; */
+    /* padding: 30px 10px; */
+  }
+  &:nth-child(2) {
+    background: crimson;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: burlywood; */
+    border: 8px dashed burlywood;
+    /* border-radius: 100px; */
+    /* border-radius: 50%; */
+    /* border-radius: 8px; */
+    border-radius: 20px 30px 40px 50px;
+  }
+}
