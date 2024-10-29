@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+@font-face {
+  font-family: "Nexon LV1";
+  src: url("./fonts/NEXON-Lv1-Gothic-Low-OTF-Bold.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  height: 100vh;
+  background-color: #e7e7e8;
+  background-image: url("./images/BackgroundFront.png"),
+    url("./images/BackgroundBack.png");
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  background: url("./images/BackgroundFront.png") bottom/100% no-repeat,
+    url("./images/BackgroundBack.png") bottom/100% no-repeat #e7e7e8;
+
+  background: #e7e7e8 url("./images/BackgroundFront.png") bottom/100% no-repeat;
+} */
+
+div {
+  text-align: center;
+  /* line-height: 500px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Nexon LV1";
+  font-style: italic; */
+
+  font: italic bold 30px/500px "Nexon LV1";
+  width: 500px;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: inherit;
+    font-style: normal;
+  }
+}

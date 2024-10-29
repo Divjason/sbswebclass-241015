@@ -1,0 +1,53 @@
+Low Fidelity Wire Frame 페이지
+
+UX/UI 기획자
+
+웹디자이너
+
+웹퍼블리셔
+
+프론트엔드
+
+백엔드
+
+풀스택 개발
+
+1.Background
+- html // css
+- 배경 스타일 정의
+- background : 
+color image position/size repeat
+
+- background-image
+- background-color
+- background-position
+- background-size
+- background-repeat
+
+2.font 속성
+
+font-size : 폰트의 크기
+font-weight : 폰트의 두께
+font-family :
+- thin(200)
+- light(300) 
+- normal(400)
+- bold(600)
+- extra bold(800)
+font-style : 기울임 // 정상
+- text-align : 수평정렬 (*가로정렬)
+- line-height : 글자 높이 길이 정의
+- text-decoration: 
+a : under-line
+
+TTF : 애플 + 마이크로 소프트사 폰트 형식 & 규격
+True Type // 1980년대
+2차 베지에
+
+OTF : 어도비 + 마이크로 소프트사 폰트 형식 & 규격
+Open Type // 1990년대
+
+워드, 파워포인트 문서
+
+윈도우 : TTF
+맥 : OTF

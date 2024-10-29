@@ -1,0 +1,31 @@
+html5 태그
+- h / p / a / br / hr / table / ul / main / aside / section / article 등등
+- 속성 & 값
+- 공간분할태그 : div && span
+
+css3 선택자
+- 선택자 : 전체 / 태그 / 아이디 / 클래스 / 속성 / 상태 / 반응 / 구조 / 문자 / 부정 등
+
+css3 속성
+- 단위 / 색상 / 가시성 / 박스 / 테두리
+
+1) display
+- block* / inline* / inline-block / none
+- transition : 전환효과를 적용x
+2) visibility
+- hidden / visible
+3) opacity
+- 0(*100프로 투명)~1(*100프로 불투명)
+
+width
+height
+margin : 현재 도형 혹은 텍스트 등의 요소 밖 공간 여백을 설정
+padding : 현재 도형 혹은 텍스트 등의 요소 안 공간 여백을 설정
+box-sizing :
+- content-box : 컨텐츠를 보호하겠다는 의미
+- border-box : 애초에 컨텐츠에 부여한 width & height값에 맞춰서 margin, padding을 해당값에 적용해서 최종 사이즈를 완성!!
+
+
+border-width
+border-style
+border-color
