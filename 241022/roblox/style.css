@@ -30,7 +30,7 @@ body {
 
 #wrapper {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
     url("./img/bg.jpg") center/cover no-repeat;
   & > form {
@@ -41,7 +41,7 @@ body {
     align-items: center;
     gap: 20px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     & > input[type="submit"] {
       position: absolute;
       top: 20px;
@@ -133,8 +133,17 @@ body {
             background: var(--dark-color);
             color: var(--light-color);
             padding: 0 10px;
+            transition: box-shadow 0.3s;
+            &::placeholder {
+              opacity: 1;
+              transition: opacity 0.3s;
+            }
             &:focus {
               outline: none;
+              box-shadow: 0 0 20px rgba(30, 144, 255, 0.8);
+              &::placeholder {
+                opacity: 0;
+              }
             }
           }
         }
@@ -153,8 +162,16 @@ body {
             background: var(--dark-color);
             color: var(--light-color);
             padding: 0 10px;
+            &::placeholder {
+              opacity: 1;
+              transition: opacity 0.3s;
+            }
             &:focus {
               outline: none;
+              box-shadow: 0 0 20px rgba(30, 144, 255, 0.8);
+              &::placeholder {
+                opacity: 0;
+              }
             }
           }
         }
@@ -205,6 +222,7 @@ body {
         .checkbox {
           width: 100%;
           label {
+            cursor: pointer;
             display: block;
             font-size: 1.1rem;
             margin-bottom: 6px;
@@ -217,6 +235,9 @@ body {
         .btn {
           width: 100%;
           margin: 30px 0 0;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
           input[type="submit"] {
             width: 100%;
             height: 40px;
@@ -230,6 +251,9 @@ body {
             &:hover {
               background: var(--light-color);
               color: var(--dark-color);
+            }
+            &:nth-child(2) {
+              display: none;
             }
           }
         }
@@ -247,13 +271,21 @@ body {
         align-items: center;
         gap: 10px;
         .contents-item {
+          width: 200px;
           background: var(--dark-color);
           color: var(--light-color);
           padding: 10px;
           display: flex;
+          justify-content: center;
           gap: 10px;
           border: 1px solid var(--light-color);
           border-radius: 8px;
+          cursor: pointer;
+          transition: background 0.3s, color 0.3s;
+          &:hover {
+            background: var(--light-color);
+            color: var(--dark-color);
+          }
           .left-content {
             i {
               font-size: 40px;
@@ -262,6 +294,51 @@ body {
           .right-content {
             display: flex;
             flex-direction: column;
+            .content-title {
+              font-size: 0.8rem;
+            }
+            .content-body {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #wrapper {
+    width: 100%;
+    height: 100%;
+    & > form {
+      width: 100%;
+      height: 100%;
+      & > input[type="submit"] {
+        display: none;
+      }
+      & > section {
+        & > #logon {
+          padding: 0 60px;
+          .btn {
+            input[type="submit"] {
+              &:nth-child(2) {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      & > footer {
+        .contents-group {
+          margin-bottom: 30px;
+          .contents-item {
+            width: 160px;
+            .left-content {
+              i {
+                font-size: 30px;
+              }
+            }
           }
         }
       }
