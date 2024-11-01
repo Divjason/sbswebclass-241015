@@ -1,0 +1,25 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* contents */
+main {
+  width: 960px;
+  border: 1px solid #ccc;
+}
