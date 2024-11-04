@@ -1,6 +1,12 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
 
+/* variables */
+:root {
+  --main-dark-color: #000;
+  --main-light-color: #fff;
+}
+
 /* reset */
 * {
   margin: 0;
@@ -21,5 +27,153 @@ a {
 /* contents */
 main {
   width: 960px;
-  border: 1px solid #ccc;
+  margin: 0 auto;
+  header {
+    width: 100%;
+    height: 160px;
+    position: relative;
+    margin-bottom: 20px;
+    #title {
+      position: absolute;
+      left: 20px;
+      top: 30px;
+      font-family: "Coiny", serif;
+    }
+    #main_gnb {
+      position: absolute;
+      top: 0;
+      right: 0;
+      ul {
+        display: flex;
+        li {
+          a {
+            display: inline-block;
+            padding: 2px 10px;
+            border: 1px solid #000;
+            transition: background 0.3s, color 0.3s;
+            &:hover {
+              background: var(--main-dark-color);
+              color: var(--main-light-color);
+            }
+          }
+          &:first-child > a {
+            border-radius: 10px 0 0 10px;
+          }
+          &:last-child > a {
+            border-radius: 0 10px 10px 0;
+          }
+        }
+      }
+    }
+    #main_lnb {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      ul {
+        display: flex;
+        li {
+          a {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid var(--main-dark-color);
+            transition: background 0.3s, color 0.3s;
+            &:hover {
+              background: var(--main-dark-color);
+              color: var(--main-light-color);
+            }
+          }
+          &:first-child > a {
+            border-radius: 10px 0 0 10px;
+          }
+          &:last-child > a {
+            border-radius: 0 10px 10px 0;
+          }
+        }
+      }
+    }
+  }
+  #content {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    #main_section {
+      width: 750px;
+      .main_article {
+        margin-bottom: 10px;
+        padding: 20px;
+        border: 1px solid var(--main-dark-color);
+      }
+    }
+    #main_aside {
+      width: 200px;
+      input:nth-of-type(1) {
+        display: none;
+        & ~ div:nth-of-type(1) {
+          display: none;
+        }
+        &:checked ~ div:nth-of-type(1) {
+          display: block;
+        }
+        &:checked ~ .buttons > label:nth-child(1) {
+          background: var(--main-light-color);
+          color: var(--main-dark-color);
+        }
+      }
+      input:nth-of-type(2) {
+        display: none;
+        & ~ div:nth-of-type(2) {
+          display: none;
+        }
+        &:checked ~ div:nth-of-type(2) {
+          display: block;
+        }
+        &:checked ~ .buttons > label:nth-child(2) {
+          background: var(--main-light-color);
+          color: var(--main-dark-color);
+        }
+      }
+      .buttons {
+        display: flex;
+        label {
+          flex: 1;
+          display: inline-block;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          cursor: pointer;
+          background: var(--main-dark-color);
+          color: var(--main-light-color);
+          border: 1px solid var(--main-dark-color);
+        }
+      }
+      .tab_item {
+        ul {
+          .item {
+            padding: 10px;
+            border: 1px solid var(--main-dark-color);
+            border-top: none;
+            a {
+              display: flex;
+              gap: 10px;
+              .description {
+                strong {
+                  display: inline-block;
+                  width: 125px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--main-dark-color);
+  }
 }

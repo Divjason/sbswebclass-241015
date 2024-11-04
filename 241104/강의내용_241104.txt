@@ -1,0 +1,7 @@
+gnb = Global Navigation Banner(Bar)
+> 웹 페이지를 제작, 메인이 되는 배너
+
+lnb = Local Navigation Banner(Bar)
+> 소제목 혹은 부타이틀 역할 배너
+
+input id = label for
