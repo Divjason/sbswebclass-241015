@@ -1,0 +1,96 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* varialbles */
+:root {
+  --main-border-color: #000;
+  --main-light-color: #fff;
+  --main-sns-color: #333;
+}
+
+/* common */
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* contents */
+.gallery {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  & > li {
+    flex: 1;
+    border-right: 5px solid var(--main-border-color);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+    &:last-child {
+      border-right: none;
+    }
+    &:nth-child(1) {
+      background: url("./images/artistic-image-01.jpg") center/cover no-repeat;
+    }
+    &:nth-child(2) {
+      background: url("./images/artistic-image-02.jpg") center/cover no-repeat;
+    }
+    &:nth-child(3) {
+      background: url("./images/artistic-image-03.jpg") center/cover no-repeat;
+    }
+    &:nth-child(4) {
+      background: url("./images/artistic-image-04.jpg") center/cover no-repeat;
+    }
+    &:nth-child(5) {
+      background: url("./images/artistic-image-05.jpg") center/cover no-repeat;
+    }
+    &:hover {
+      flex: 3;
+      filter: grayscale(1);
+    }
+    .content {
+      background: var(--main-border-color);
+      color: var(--main-light-color);
+      width: 100%;
+      height: 250px;
+      position: absolute;
+      bottom: -250px;
+      text-align: center;
+      padding: 20px;
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      cursor: pointer;
+      transition: all 0.5s;
+      .sns {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        a {
+          color: var(--main-light-color);
+        }
+      }
+    }
+    &:hover .content {
+      bottom: 0;
+      transition-delay: 0.5s;
+    }
+  }
+}
