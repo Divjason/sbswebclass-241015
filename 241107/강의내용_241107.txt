@@ -1,0 +1,42 @@
+background-color
+background-image
+background-position
+background-size
+background-repeat
+background-attachment
+
+*git-hub에 업로드된 자료 어떻게 다운로드 받나요?
+
+1.수동방법 : 학원에서 push한 자료 => git-hub 원격저장소
+- code > Download ZIP
+- 내 레포지토리 > 다운로드 직접
+
+2.fork : 
+- https://github.com/Divjason/sbswebclass-241015
+- code > Download ZIP
+- 강사 레포지토리 > 데이터를 > 다운로드
+(*즐겨찾기)
+
+3.clone : 복제하다
+- vscode > 터미널 > git-bash > git clone 원격저장소 레포지토리 주소
+- 다수의 개발자들이 프로젝트 진행
+- PM > follower 개발자
+
+4.pull : <-> push
+- push : 로컬폴더에서 작업한 내 자료를 원격 저장소 레포지토리로 데이터를 보내는 작업
+- pull : 원격 저장소 레포지토리의 데이터를 로컬폴더로 가져오는 작업
+- git pull origin 브랜치명(master)
+
+5.반드시 git은 원격저장소 내 업데이트가 발생되면, 로컬컴퓨터에서 pull을 한 번 이상 적용해서 신규 데이터를 내려받아야지만, push를 할 수 있음
+
+xhtml
+html 5
+
+xml => Extensible Markup Language
+
+굉장히 다양한 library : 도서관
+> 이미 만들어놓은 수레바퀴는 다시 만들지 마라!!!
+> 공부 > 책
+> svg 
+
+anime.js : magic
