@@ -1,0 +1,25 @@
+#box {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom, #cb60b3, #db36a4);
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 160px;
+  animation: rotation 2s linear infinite alternate;
+}
+
+@keyframes rotation {
+  0% {
+    left: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 500px;
+  }
+  100% {
+    left: 500px;
+    transform: rotate(360deg);
+  }
+}

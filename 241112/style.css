@@ -1,0 +1,21 @@
+/* variables */
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .box {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  cursor: pointer;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+  transition-property: background;
+  transition-timing-function: linear;
+}
+body .box:hover {
+  background: dodgerblue;
+}

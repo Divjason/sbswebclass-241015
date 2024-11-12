@@ -1,0 +1,45 @@
+박 세 진 강사
+2009년 개발 업무
+2019년 현직 개발자
+
+웹 에이전시 + 5년의 시간 부트캠프 강사
+- FullStack 경력
+- JS & TS & React & Next
+- Python & Java
+
+웹1 : html5, css3
+웹2 : css3 심화 & 반응형
+// transition 
+// transform
+// animation
+// compiler: A => A+
+// interpreter A + B + C => D
+
+
+웹3 : JS
+웹4 : html, css, js 실전예제
+포폴
+포폴디렉팅
+
+전환효과 : transition
+
+font-size
+font-weight
+font-style
+font-family
+
+> font
+
+background-color
+background-image
+background-repeat
+background-position
+
+> background
+
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+

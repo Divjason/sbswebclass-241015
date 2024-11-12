@@ -1,0 +1,25 @@
+/* variables */
+$main-box-color: orange;
+$sub-box-color: dodgerblue;
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .box {
+    width: 100px;
+    height: 100px;
+    background: $main-box-color;
+    cursor: pointer;
+    // transition: background 0.5s;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    transition-property: background;
+    transition-timing-function: linear;
+    &:hover {
+      background: $sub-box-color;
+    }
+  }
+}
