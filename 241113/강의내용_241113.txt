@@ -1,0 +1,9 @@
+전환 : transition
+변환 : transform
+- rotate
+- translate
+- skew
+- scale
+
+학창시절, 수학시간 그래프
+데카르트  좌표계
