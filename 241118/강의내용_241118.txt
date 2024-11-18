@@ -1,0 +1,11 @@
+웹2
+1.scss 활용
+2.transition
+3.transform
+4.Home Town
+5.회전목마
+
+> 반응형
+- flex // grid // media-query
+
+* 3.14 * 반지름 = 2400
