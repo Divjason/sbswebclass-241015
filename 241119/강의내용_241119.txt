@@ -1,0 +1,46 @@
+Flex
+
+1.flex UI속성을 부여하기 위해서는 반드시 부모요소에 display: flex 속성 입력
+flex-direction : 중심축 가로 // 세로 row / column
+
+2.중심축으로 정렬 : default 중심축 가로 (*row)
+- justify-content : flex-start / center / flex-end / space-between / space-around / space-evenly
+- justify-items : flex-start / center / flex-end 
+> content : item들을 하나의 content 그룹으로 간주하고 정렬
+> items : item들 개별적으로 정렬
+
+3.교차축으로 정렬 : default 교차축 세로 (*col)
+- align-items : flex-start / center / flex-end / stretch
+- align-content : flex-start / center / flex-end / stretch / space-between / space-around / space-evenly
+> content : item들을 하나의 content 그룹으로 간주하고 정렬
+> items : item들 개별적으로 정렬
+
+4.자식요소들 간 간격을 떨어뜨려주고 싶을 때 : gap
+
+5.부모요소가 display: flex속성을 가지고 있으면, 자식요소를 기본적으로 부모요소 내부에 포함시키려고하는 속성!!!
+- flex-wrap : default no-wrap : 자식요소의 너비값을 보장 x
+// wrap : 자식요소가 사용하고 싶은 너비값을 보장
+
+6.flex-flow : flex-direction & flex-wrap 두 가지의 값을 동시에 사용할 수 있는 축약
+
+7.flex-grow : 부모요소의 너비값을 기준으로 몇 비율을 할당할 것인가를 결정!
+
+8.flex-shrink : 부모요소의 너비값을 기준으로 얼만큼의 비율로 줄어들게 할 것인가 결정!
+
+9.flex-basis : 마치 픽셀처럼 고정값으로 너비의 값을 부여하고자 할 때
+
+10.flex : flex-grow flex-shrink flex-basis
+> flex-shrink flex-basis => 옵셔널한 값
+> flex-grow => 필수 값
+
+11.order : flex라는 부모요소 아래에 존재하는 자식 요소들의 포지션 순서를 정의하는 속성!!
+
+1.상향식 코딩 방법 : 초급자 혹은 신입
+
+2.하향식 코딩 방법 : 숙련자 혹은 경력자
+
+
+
+
+
+
