@@ -1,0 +1,208 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* variables */
+$montserrat-font-family: "Montserrat", sans-serif;
+$main-font-color: #222;
+$main-hover-color: #dc143c;
+$main-light-color: #fff;
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* common */
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $main-font-color;
+  font-family: $montserrat-font-family;
+  overflow: hidden;
+}
+
+/* contents */
+main {
+  width: 960px;
+  height: 100%;
+  margin-top: 50px;
+  header {
+    width: 100%;
+    .gnb {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      li {
+        a {
+          display: inline-block;
+          margin: 15px;
+          padding-bottom: 8px;
+          position: relative;
+          transition: color 0.3s;
+          &:hover {
+            color: $main-hover-color;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background: $main-hover-color;
+            transform: translateX(-50%);
+            transition: width 0.3s;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+        }
+        &:last-child a {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .search-box {
+    width: 100%;
+    form {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      input {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 20px;
+        padding: 5px;
+        font-size: 18px;
+        &:first-child {
+          background: url("./images/search.png") right center/22px no-repeat;
+          width: 300px;
+          transition: opacity 0.3s;
+          &:focus {
+            outline: none;
+            &::placeholder {
+              opacity: 0;
+            }
+          }
+        }
+        &:last-child {
+          margin-right: 10px;
+          padding: 12px 60px;
+          border: none;
+          border-radius: 8px;
+          background: $main-hover-color;
+          color: $main-light-color;
+          box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.4);
+          cursor: pointer;
+          transition: background 0.3s;
+          &:hover {
+            background: $main-font-color;
+          }
+        }
+      }
+    }
+  }
+  .items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .item {
+      width: 310px;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .desc {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        padding: 10px;
+        width: 100%;
+        background: rgba($color: #000000, $alpha: 0.3);
+        color: $main-light-color;
+        transition: top 0.3s;
+        h6 {
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
+        .like {
+          display: flex;
+          justify-content: space-between;
+          span {
+            font-size: 13px;
+            &:nth-child(1) i {
+              color: $main-hover-color;
+            }
+          }
+        }
+      }
+      &:hover .desc {
+        top: 70%;
+      }
+    }
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  main {
+    width: 100%;
+    padding: 20px;
+    .items {
+      .item {
+        width: 49%;
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    padding: 20px;
+    header {
+      .gnb {
+        justify-content: center;
+      }
+    }
+    .search-box {
+      form {
+        flex-direction: column;
+        input {
+          &:first-child {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .items {
+      .item {
+        width: 100%;
+      }
+    }
+  }
+}

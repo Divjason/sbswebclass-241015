@@ -32,6 +32,7 @@ body .container {
   height: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: row;
   align-items: center;
   gap: 20px;
 }
@@ -39,11 +40,65 @@ body .container .card {
   width: 300px;
   height: 400px;
   position: relative;
-  border: 1px solid #f00;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 body .container .card .content {
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.5s;
+}
+body .container .card .content h2 {
+  font-size: 30px;
+}
+body .container .card .content h2 span {
+  font-size: 14px;
+  display: block;
+  color: gold;
+  margin: 10px 0;
 }
 body .container .card .content p {
   width: 100%;
+}
+body .container .card .content .sns {
+  margin-top: 20px;
+}
+body .container .card .content .sns i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 28px;
+}
+body .container .card:nth-child(1) .content {
+  background: linear-gradient(to top, crimson, transparent);
+}
+body .container .card:nth-child(2) .content {
+  background: linear-gradient(to top, dodgerblue, transparent);
+}
+body .container .card:nth-child(3) .content {
+  background: linear-gradient(to top, yellowgreen, transparent);
+}
+body .container .card:hover .content {
+  top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body .container {
+    flex-direction: column;
+  }
 }
