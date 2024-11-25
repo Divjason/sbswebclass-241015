@@ -1,0 +1,107 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* variables */
+/* common */
+body {
+  font-size: 15px;
+  color: #222;
+}
+
+.inner {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+/* contents */
+.container {
+  width: 100%;
+  height: 3000px;
+}
+
+/* header */
+header {
+  width: 100%;
+  position: fixed;
+  transition: all 0.3s;
+}
+header .banner {
+  background: #000;
+  color: #ddd;
+  width: 100%;
+  height: 40px;
+  transition: all 0.3s;
+}
+header .banner .lnb {
+  width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+header .top-info {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top-info .gnb {
+  display: flex;
+  gap: 20px;
+  color: #ddd;
+  transition: all 0.3s;
+}
+header .top-info .gnb li > a:hover {
+  color: crimson;
+}
+header.active {
+  background: #ddd;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+header.active .banner {
+  height: 0px;
+  overflow: hidden;
+}
+header.active .top-info .gnb {
+  color: #222;
+}
+
+/* intro */
+.intro {
+  width: 100%;
+  height: 100vh;
+  background: url("./images/intro.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+.intro .heading {
+  color: #ddd;
+  text-align: center;
+}
+.intro .heading h1 {
+  font-size: 4.6rem;
+  margin-bottom: 40px;
+}
+.intro .heading p {
+  font-size: 1.3rem;
+  padding: 0 150px;
+  line-height: 2rem;
+}

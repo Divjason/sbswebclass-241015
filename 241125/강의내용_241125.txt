@@ -1,0 +1,12 @@
+1.나의 로컬컴퓨터 git 설치 확인!
+- cmd > git -v
+
+2.나의 로컬컴퓨터 git 소유주 정보 확인!
+- git config --list
+
+3.나의 로컬컴퓨터 git 소유주 정보 등록!
+- git config --global user.name "Divjason"
+- git config --global user.email "sejinpark@tcocs.com"
+
+4.git-hub 원격저장소 데이터를 로컬 컴퓨터 복제!
+- git clone https://github.com/Divjason/sbswebclass-241015.git
