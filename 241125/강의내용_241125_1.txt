@@ -1,0 +1,21 @@
+자바스크립트 라이브러리!!!
+
+CS : Computer Science = 컴퓨터 공학
+
+1.웹 브라우저 우리가 작성한 html, css, js 코드를 어떤 순서로 어떻게 읽어나가는가?
+
+- script 프로그래밍 언어 사용목적 : user가 참여할 수 있는 interactive한 웹 페이지를 만들기위한 목적
+- html 혹은 css로 작성한 코드를 재활용
+
+2.비동기적으로 html 코드 & script 코드를 동시에 읽을 수 있도록 조치를 취해야함
+
+pasring 단계
+excuting 단계
+
+FCP : First ContentFul Paint
+
+Hydration 시간
+
+TTI : Time To interval
+
+

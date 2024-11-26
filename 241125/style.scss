@@ -1,8 +1,12 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 ul,
@@ -19,6 +23,7 @@ a {
 $main-text-color: #222;
 $main-dark-color: #000;
 $main-light-color: #ddd;
+$section-bg-color: #f8f8f8;
 
 /* common */
 body {
@@ -108,6 +113,152 @@ header {
       font-size: 1.3rem;
       padding: 0 150px;
       line-height: 2rem;
+    }
+  }
+}
+
+/* about */
+.about-content {
+  width: 100%;
+  display: flex;
+  padding: 150px 0;
+  & > div {
+    padding: 30px;
+    &.desc {
+      text-align: center;
+      flex: 3;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        margin: 30px 0;
+      }
+      a {
+        color: orange;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &.photo {
+      flex: 2;
+      img {
+        width: 100%;
+        border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+      }
+    }
+  }
+}
+
+/* ranking */
+.ranking {
+  width: 100%;
+  height: 860px;
+  background: $section-bg-color;
+  .ranking-content {
+    padding: 100px 0 25px;
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+  .items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .item {
+      width: 390px;
+      height: 600px;
+      border-radius: 30px 0 30px 0;
+      overflow: hidden;
+      box-shadow: 5px 5px 20px rgba($color: #000000, $alpha: 0.2);
+      .up-image {
+        width: 100%;
+        height: 285px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .down-desc {
+        padding: 50px 25px 25px;
+        .badge {
+          display: inline-block;
+          color: $main-light-color;
+          padding: 2px 10px;
+          font-size: 1rem;
+          &.good {
+            background: #e60012;
+          }
+          &.must {
+            background: #00a0e9;
+          }
+        }
+        h3 {
+          font-size: 1.5rem;
+          margin: 15px 0;
+        }
+        p {
+          font-size: 1rem;
+          margin-bottom: 15px;
+        }
+        .btn-explore {
+          color: orange;
+          font-weight: 500;
+          img {
+            transition: all 0.3s;
+          }
+          &:hover img {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* testimonial */
+.testomonial {
+  padding: 100px 0;
+  .testimonial-content {
+    text-align: center;
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    hr {
+      width: 120px;
+      height: 4px;
+      border: none;
+      background: #1c45e3;
+      margin: 30px auto;
+    }
+    .client {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      img {
+        width: 85px;
+        border-radius: 50%;
+      }
+      span {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        text-align: left;
+        b {
+          display: block;
+        }
+      }
+    }
+    .comment {
+      font-size: 1rem;
+      line-height: 1.7rem;
     }
   }
 }
