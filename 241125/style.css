@@ -109,6 +109,7 @@ body {
 header {
   width: 100%;
   position: fixed;
+  z-index: 10;
   transition: all 0.3s;
 }
 header .banner {
@@ -458,8 +459,56 @@ footer .footer-content ul li:first-child:hover {
   text-decoration: underline;
 }
 
+/* gotoTop */
+.gototop {
+  position: fixed;
+  bottom: -20px;
+  right: 20px;
+  background: linear-gradient(45deg, #87ceeb, #c1e4f2);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.4rem;
+  color: #f8f8f8;
+  opacity: 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: bottom 0.5s, opacity 0.5s;
+}
+.gototop.active {
+  bottom: 20px;
+  opacity: 1;
+}
+
 /* responsive */
 @media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+  }
+  .container {
+    width: 100%;
+  }
+  .inner {
+    width: 100%;
+    padding: 15px;
+  }
+  .post-item {
+    flex-direction: column;
+  }
+  .post-item .post-image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .post-item .post-image img {
+    border-radius: 8px;
+  }
+  header {
+    padding: 10px;
+  }
   header .banner {
     display: none;
   }
@@ -514,5 +563,58 @@ footer .footer-content ul li:first-child:hover {
   header .top-info .trigger.active span:nth-child(3) {
     top: 50%;
     transform: rotate(-45deg);
+  }
+  .intro .heading h1 {
+    font-size: 2.6rem;
+  }
+  .intro .heading p {
+    padding: 0;
+  }
+  .about-content {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  .about-content > div {
+    padding: 10px;
+  }
+  .ranking .ranking-content {
+    padding: 50px 0;
+  }
+  .ranking .items {
+    flex-direction: column;
+  }
+  .ranking .items .item {
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 8px;
+  }
+  .testomonial {
+    margin-top: 1150px;
+    padding: 50px 0;
+  }
+  .testomonial .testimonial-content h2 {
+    font-size: 1.6rem;
+  }
+  .testomonial .testimonial-content .client {
+    flex-direction: column;
+  }
+  .callaction .callaction-heading h2 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+  .blog {
+    padding: 50px 0;
+  }
+  .blog .blog-content .post-content {
+    flex-direction: column;
+  }
+  .festival {
+    padding: 15px;
+  }
+  footer .footer-content {
+    flex-direction: column;
+  }
+  footer .footer-content ul {
+    margin-bottom: 25px;
   }
 }
