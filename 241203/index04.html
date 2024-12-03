@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parent {
+        width: 100%;
+        height: 500px;
+        border: 5px solid #000;
+        background: yellowgreen;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: center;
+        align-items: center;
+        div {
+          background: crimson;
+          color: #fff;
+          text-align: center;
+          line-height: 100px;
+          width: 100px;
+          height: 100px;
+          &:last-child {
+            justify-self: end;
+            align-self: end;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div>1</div>
+      <div>2</div>
+    </div>
+  </body>
+</html>

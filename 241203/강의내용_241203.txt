@@ -1,0 +1,57 @@
+1.코로나 
+- 연봉을 많이 주는 곳으로 무조건 간다
+
+2.코로나 직후
+- 연봉을 덜받더라도 경험을 쌓겠다
+
+3.현재
+- 경험을 쌓게끔만 해줘도 나는 행복할 것 같다
+
+*우리 모두 부정적이다!!! x
+
+> 기회!!!
+진짜 이 분야를 좋아하는 사람들의 건강한 경쟁
+오히려 실력을 더 발전시키 좋은 시기
+경기 안좋을 때가 있다면 반등 시기
+포트폴리오 준비!!!
+
+grid : 기획자 입장에서 몇 행, 몇 열을 만들지를 미리 사전에 정의 & 결정이 된 상태에서 사용하면 좋을 레이아웃 박스 시스템
+
+- 1) 부모요소에 display: grid
+- 2) 몇 개의 열을 생성 : grid-template-columns
+- 3) 단위 : px // auto / fr = fraction : 파편
+- 4) 몇 개의 행을 생성 : grid-template-rows
+- 5) grid: grid-template-rows / grid-template-columns
+- 6) grid-column-gap: 열과 열 사이의 간격 제어
+- 7) grid-row-gap: 행과 행 사이의 간격 제어
+> grid-gap : 하나로 축약해서 사용가능!
+- 8) justify-items: start / center / end;
+- 9) align-items: start / center / end;
+- 10) justify-content : start / center / end;
+> 각각의 아이템을 하나로 모은 그룹 차원으로 정렬 하고자 할 때
+- 11) justify-self : 부모요소의 그리드 레이아웃 정렬과 별개로 직접 레이아웃 정렬을 시켜주고자 할 때 사용할 수 있는 문법
+- 12) align-self : 부모요소의 그리드 레이아웃 정렬과 별개로 직접 레이아웃 정렬을 시켜주고자 할 때 사용할 수 있는 문법
+- 13) grid-column-start
+- 14) grid-column-end
+- 15) grid-column
+- 16) grid-column: 1 / span 2;
+- 17) grid-row-start
+- 18) grid-row-end
+- 19) grid-area
+> 그리드 레이아웃 박스의 공간을 정의할 때 사용하는 방법들
+
+flex : 사전에 몇 행, 몇 열을 만들지 정의가 되어있지 않더라도 유연하게 레이아웃을 정렬할 수 있는 박스 시스템
+
+부모요소에서 flex // 
+- 중심축 & 교차축
+- row = 가로
+
+가로, 세로 정렬 justify-content // align-items : 가로 | 세로
+
+auto : 특정 요소가 사용할 수 있는 (= 실제 너비 혹은 높이) 너비 혹은 높이를 자동으로 사용하겠다는 의미!!!
+
+
+
+
+
+
