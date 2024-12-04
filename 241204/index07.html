@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 250px auto 250px;
+        grid-template-rows: 100px 600px auto 100px;
+        grid-template-areas:
+          "header header header"
+          "welcome welcome welcome"
+          "banner main aside"
+          "footer footer footer";
+        div {
+          text-align: center;
+          padding: 30px;
+          font-size: 18px;
+          border: 1px solid #000;
+          &.header {
+            grid-area: header;
+            background: darkkhaki;
+          }
+          &.welcome {
+            grid-area: welcome;
+            background: url("https://www.techm.kr/news/photo/202204/96212_109505_3827.jpg")
+              center/cover no-repeat;
+          }
+          &.banner {
+            grid-area: banner;
+          }
+          &.main {
+            grid-area: main;
+          }
+          &.aside {
+            grid-area: aside;
+          }
+          &.footer {
+            grid-area: footer;
+            background: darkkhaki;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">header</div>
+      <div class="welcome">welcome</div>
+      <div class="banner">banner</div>
+      <div class="main">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt magnam
+        itaque illum eligendi hic, quas qui, delectus quaerat dolores ea totam
+        praesentium, numquam id rem sapiente. Eum sunt provident iste. Lorem
+        ipsum dolor sit amet consectetur, adipisicing elit. Sunt magnam itaque
+        illum eligendi hic, quas qui, delectus quaerat dolores ea totam
+        praesentium, numquam id rem sapiente. Eum sunt provident iste. Lorem
+        ipsum dolor sit amet consectetur, adipisicing elit. Sunt magnam itaque
+        illum eligendi hic, quas qui, delectus quaerat dolores ea totam
+        praesentium, numquam id rem sapiente. Eum sunt provident iste. Lorem
+        ipsum dolor sit amet consectetur, adipisicing elit. Sunt magnam itaque
+        illum eligendi hic, quas qui, delectus quaerat dolores ea totam
+        praesentium, numquam id rem sapiente. Eum sunt provident iste. Lorem
+        ipsum dolor sit amet consectetur, adipisicing elit. Sunt magnam itaque
+        illum eligendi hic, quas qui, delectus quaerat dolores ea totam
+        praesentium, numquam id rem sapiente. Eum sunt provident iste. Lorem
+        ipsum dolor sit amet consectetur, adipisicing elit. Sunt magnam itaque
+        illum eligendi hic, quas qui, delectus quaerat dolores ea totam
+        praesentium, numquam id rem sapiente. Eum sunt provident iste.
+      </div>
+      <div class="aside">aside</div>
+      <div class="footer">footer</div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+200 // 300 : 1
+> 지난주 금요일 포폴 완성
+> 30대 초반 남성
+> 고졸
+> 비전공
+> 경력 x
+
+React.js // TS // Firebase
+
+html, css, js => x
+*결국 기본기 받춰줘야 라이브러리 & 프레임워크
+
+1.CRUD 기능 어느정도 선까지 포함 (*난이도 상)
+- Create
+- Read
+- Update
+- Delete
+
+2.아트웍 + 인터랙티브 기능 얼만큼 화려
+
+3.라이브러리 & 프레임워크 얼만큼 사용
+VS
+JS
+
+4.어떤 기술 stack : html, css, js, jQuery
+
+
+
