@@ -1,0 +1,59 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* variables */
+.heading {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+}
+.heading span {
+  color: #1e90ff;
+}
+.heading::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: #dc143c;
+}
+
+.news-heading {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+}
+.news-heading span {
+  color: #1e90ff;
+}
+.news-heading::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: #dc143c;
+}

@@ -1,0 +1,16 @@
+/* reset css */
+@import "./scss/reset";
+
+/* variables */
+@import "./scss/variables";
+
+.frame {
+  padding: 20px;
+  border: 1px solid $main-dark-color;
+  text-align: center;
+  @at-root .heading {
+    font-size: 36px;
+    font-weight: normal;
+    color: $main-red-color;
+  }
+}

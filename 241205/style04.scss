@@ -1,0 +1,57 @@
+/* reset css */
+@import "./scss/reset";
+
+/* variables */
+@import "./scss/variables";
+
+@mixin button-style {
+  cursor: pointer;
+  display: inline-block;
+  width: 150px;
+  padding: 7px;
+  background: $main-light-color;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+  &.complete:hover {
+    background: $main-blue-color;
+    color: $main-light-color;
+    border: 3px solid transparent;
+  }
+  &.loading:hover {
+    background: $main-green-color;
+    color: $main-light-color;
+    border: 3px solid transparent;
+  }
+  &.error:hover {
+    background: $main-red-color;
+    color: $main-light-color;
+    border: 3px solid transparent;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.complete {
+  border: 3px solid $main-blue-color;
+  color: $main-blue-color;
+  @include button-style();
+}
+
+.loading {
+  border: 3px solid $main-green-color;
+  color: $main-green-color;
+  @include button-style();
+}
+
+.error {
+  border: 3px solid $main-red-color;
+  color: $main-red-color;
+  @include button-style();
+}

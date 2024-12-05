@@ -1,0 +1,23 @@
+/* reset css */
+@import "./scss/reset";
+
+/* variables */
+@import "./scss/variables";
+
+.font {
+  &-large {
+    font-size: 60px;
+    color: $main-red-color;
+    text-transform: uppercase;
+  }
+  &-medium {
+    font-size: 40px;
+    color: $main-green-color;
+    text-transform: uppercase;
+  }
+  &-small {
+    font-size: 20px;
+    color: $main-blue-color;
+    text-transform: uppercase;
+  }
+}

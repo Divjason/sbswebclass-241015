@@ -1,0 +1,62 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* variables */
+/* contents */
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+}
+
+.btn-outer .btn {
+  text-transform: uppercase;
+  display: inline-block;
+  width: 300px;
+  height: 50px;
+  background: #555;
+  text-align: center;
+  line-height: 48px;
+  transition: background 0.3s;
+  position: relative;
+}
+.btn-outer .btn::before, .btn-outer .btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.btn-outer .btn:hover {
+  background: transparent;
+}
+.btn-outer .btn:hover::before {
+  opacity: 1;
+  transform: rotate(45deg);
+}
+.btn-outer .btn:hover::after {
+  opacity: 1;
+  transform: rotate(-45deg);
+}
