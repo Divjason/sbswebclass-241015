@@ -1,0 +1,55 @@
+/* Google Icons */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+/* reset */
+@import "./scss/reset.scss";
+
+/* variables */
+@import "./scss/variables.scss";
+
+/* contents */
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: $main-dark-color;
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 20px;
+    li {
+      input[type="checkbox"] {
+        display: none;
+        &:checked + div {
+          border: none;
+          box-shadow: 0 0 10px rgba($color: #1e90ff, $alpha: 0.5),
+            0 0 50px rgba($color: #1e90ff, $alpha: 0.5),
+            0 0 100px rgba($color: #1e90ff, $alpha: 0.5);
+        }
+        &:checked + div span {
+          text-shadow: 0 0 10px rgba($color: #1e90ff, $alpha: 0.5),
+            0 0 50px rgba($color: #1e90ff, $alpha: 0.5),
+            0 0 100px rgba($color: #1e90ff, $alpha: 0.5);
+        }
+      }
+      div {
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        border: 3px solid $box-bg-color;
+        border-radius: 10px;
+        background: #222;
+        color: $main-light-color;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        span {
+          font-size: 50px;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+/* reset */
+@import "./scss/reset.scss";
+
+/* variables */
+@import "./scss/variables.scss";
+
+/* contents */
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: $main-dark-color;
+}
+
+.heart-beat {
+  width: 100px;
+  height: 100px;
+  background: $main-red-color;
+  transform: rotate(45deg);
+  box-shadow: 0 -10px 100px $main-red-color;
+  position: relative;
+  animation: heart-beat 0.5s linear infinite;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: $main-red-color;
+  }
+  &::before {
+    left: -50%;
+  }
+  &::after {
+    top: -50%;
+  }
+}
+
+@keyframes heart-beat {
+  0% {
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(45deg) scale(0.9);
+  }
+}
