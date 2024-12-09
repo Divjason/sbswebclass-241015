@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+@import "./scss/reset.scss";
+@import "./scss/variants.scss";
+@import "./scss/mixin.scss";
+
+body {
+  background: map-get($bg-color, primary);
+  color: map-get($font-color, primary);
+  font-family: map-get($font-family, kor);
+  font-size: map-get($font-size, base);
+  font-weight: 300;
+  line-height: 1.5rem;
+}
